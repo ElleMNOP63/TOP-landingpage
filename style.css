@@ -1,120 +1,146 @@
 *{
-    padding: 0;
-    margin: 0;
     text-decoration: none;
-    font-family:'roboto',sans-serif;
+    list-style: none;
+    font-family: 'roboto', Verdana,sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 100px;
+    justify-content: space-between;
+    padding: 5px 25px;
     background-color: #1f2937;
     color: white;
 }
-.left{
-    display: flex;
-    justify-content: center;
+.header .left h2{
+    padding: 0 80px;
 }
-.right a{
-    margin: 10px;
-    color: rgba(255, 255, 255, .8);
+.header a{
+    color: rgba(255, 255, 255, .6);
+    padding: 0 15px;
 }
 .page{
     display: flex;
     flex-direction: column;
-    flex:1;
 }
-.top{
-    background-color: #1f2937 ;
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    padding: 25px 100px;
+.page div{
+    flex: 1 1 auto;
+    padding: 50px 100px;
 }
-.top-left{
-    width: 30%;
+.page .top{
+    background-color: #1f2937;
     color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 250px;
+    align-items: center;
 }
-.top-right{
-    margin-right: 200px;
+.page .top .top-left{
+    flex: 1 1 auto;
+    width: 200px;
 }
-.top-left p{
-    color: rgba(255, 255, 255, .8);
+.page .top .top-left p{
+    color: rgba(255, 255, 255, .6);
+}
+
+.page .top .top-right{
+    flex: 1 1 auto;
 }
 .imgplaceholder{
-    width: 300px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, .5);
-    border: none;
+    height: 80px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 4px;
 }
 button{
     background-color: #3882f6;
     color: white;
     border: none;
-    padding: 4px 15px;
+    padding: 5px 20px;
     border-radius: 5px;
 }
-.quote{
-    background-color: #e5e7eb;
-    height: 300px;
-    width: auto;
+.page .random-info{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center
+    flex: 0 0 auto;
 }
-.quote p{
-    width: 400px;
+.page .random-info h3{
+    font-weight: bold;
+    font-size: 32px;
 }
-.quote p .thor{
-    text-align: right;
-    
-}
-.quote p .em{
-    text-align: left;
-}
-.action{
-    background-color:#3882f6 ;
-    color:white;
+.page .random-info .box-c{
     display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    margin: 50px 100px;
-    border-radius: 4px;
+    flex: 0 0 auto;
 }
-.words p{
-    color: rgba(255, 255, 255, .8);
-}
-.sign-button{
-    border: white solid 1px;
-}
-.random-info{
-    margin: 20px 100px;
+.page .random-info .box-c .individual-box-c{
     display: flex;
     flex-direction: column;
 }
-.box-c{
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
+.page .random-info .box-c .individual-box-c p{
+    width: 120px;
+    color: #1f2937;
 }
-.random-info h3{
-    text-align: center;
-    padding: 10px;
+
+.page .random-info .box-c .box{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border:#3882f6 solid 4px;
+    border-radius: 8px;
+    flex: none;
 
 }
-.box{
-    width: 100px;
-    border: #3882f6 solid 3px;
-    border-radius: 10px;
-    height:100px;
-    padding: 10px;
+.page .quote{
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
 }
-.box p{
+.page .quote em{
+   font-size: 24px;
     
 }
+.page .quote p {
+    width: 400px;
+}
+.page .quote p .thor{
+    align-self: flex-end ;
+}
+.page .action{
+    background-color: #3882f6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 300px;
+    border-radius: 6px;
+}
+.page .action .words h4{
+    font-size: 32px;
+}
+.page .action .words p{
+    font-size: 20px;
+    color: rgba(255, 255, 255, .8);
+}
+.page .action button{
+    border: white solid 2px;
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
+
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #1f2937;
     color: white;
+    height: 65px;
 }
+
