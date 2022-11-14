@@ -89,3 +89,32 @@ button{
 .sign-button{
     border: white solid 1px;
 }
+.random-info{
+    margin: 20px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.box-c{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.random-info h3{
+    text-align: center;
+    padding: 10px;
+
+}
+.box{
+    width: 100px;
+    border: #3882f6 solid 3px;
+    border-radius: 10px;
+    height:100px;
+    padding: 10px;
+}
+.box p{
+    
+}
+footer{
+    background-color: #1f2937;
+    color: white;
+}
